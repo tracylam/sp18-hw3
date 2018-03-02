@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get '/students/new', to: 'students#new'
   post '/students', to: 'students#create1'
 
+  get '/' => redirect('/students/new')
+
 
 end
